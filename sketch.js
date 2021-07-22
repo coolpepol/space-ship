@@ -1,6 +1,7 @@
 var good , goodimg,bad,badImg
 var bg
 var gameState = "yay"
+var score
 function preload(){
 goodimg = loadImage("g.png")
 badImg = loadImage("b.png")
@@ -24,6 +25,8 @@ function setup() {
 function draw() {
     background(52)
     if(gameState = "yay"){
+        score+=1
+        text(score,20,20)
         if(frameCount % 60 === 0)
         bad = createSprite(random(30,370),440,20,20)
         bad.addImage("belo",badImg)
