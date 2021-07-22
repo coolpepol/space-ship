@@ -29,6 +29,7 @@ function draw() {
         bad.addImage("belo",badImg)
         bad.scale = 0.1
         bad.velocityY = -3
+      bg.add(bad)
 if(good.isTouching(bg)){
     good.destroy()
     gameState = "nay"
