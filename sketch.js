@@ -1,7 +1,7 @@
 var good , goodimg,bad,badImg
 var bg
 var gameState = "yay"
-var score
+var score = 0
 function preload(){
 goodimg = loadImage("g.png")
 badImg = loadImage("b.png")
